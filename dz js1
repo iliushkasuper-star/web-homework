@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Подсчитать сумму всех чисел в заданном пользователем
+// диапазоне.
+        // let i = parseFloat(prompt("Enter num: "))
+        // let result
+        // for (let i = 0; i < user; i++) {
+        //    result += i;
+        //    alert(result)
+
+        // }
+    </script>
+    <script>
+// Запросить 2 числа и найти только наибольший общий
+// делитель.
+    // let num1 = parseFloat(prompt("Enter num1: "))
+    // let num2 = parseFloat(prompt("Enter num2: "))
+    // while(num1 % 2 , num2 % 2){
+    //     let delitel = num1 % 2 && num2 % 2
+
+    //     alert(delitel)
+    // }
+
+    </script>
+    <script>
+// Запросить у пользователя число и вывести все делители
+// этого числа.
+// let input = prompt("Enter num:");
+// let number = parseInt(input);
+
+// if (isNaN(number)) {
+//     alert("Wrong num!");
+// } else {
+//     let divisors = "";
+//     for (let i = 1; i <= number; i++) {
+//         if (number % i === 0) {
+//             divisors += i + " ";
+//         }
+//     }
+//     alert("DELITEL NUM " + number + ": " + divisors);
+// }
+    </script>
+</body>
+</html>
