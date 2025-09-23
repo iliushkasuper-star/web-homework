@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// . Вывести # столько раз, сколько указал пользователь.
+        // let user = 0;
+        // let enter = prompt("Enter how much times u wanna print #: ")
+        // while(user <= enter)
+        // {
+        //     user++;
+        //     enter += user;
+            
+        // }
+    </script>
+    <script>
+// Пользователь ввел число, а на экран вывелись все числа
+// от введенного до 0.
+        // let user = parseFloat(prompt("Enter num: "))
+        // while(user > 0)
+        // {
+        //     user--;
+        //     alert(user)
+        // }
+    </script>
+    <script>
+//         Запросить число и степень. Возвести число в указанную
+// степень и вывести результат
+
+        // let num = parseFloat(prompt("Enter num: "))
+        // let stepen = parseFloat(prompt("Enter stepen: "))
+        // result = num;
+        // while(stepen > 1){
+        //     result = result * num 
+
+        // }
+        // return result;
+    </script>
+    <script>
+// Запросить 2 числа и найти все общие делители
+        // let num1 = parseFloat(prompt("Enter num1: "))
+        // let num2 = parseFloat(prompt("Enter num2: "))
+        // let delitel = num1 / 2 && num2 / 2;
+        // while(num1 && num2 % 2){
+        //     alert(delitel);
+        // }
+    </script>
+    <script>
+
+//         Вывести все числа от 1 до 100, которые кратные указанному
+// пользователем числу
+        // let user = parseFloat(prompt("Enter numm: "))
+        // for (let i = 0; i < 100; i++) {
+        //     user % i;
+        //     i++;
+        //     alert(i)
+        // }
+    </script>
+</body>
+</html>
