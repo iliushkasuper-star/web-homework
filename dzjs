@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let questionse = ["You like music", "You wanna get rich", "Are you programmer"]
+        // let score = [1,2,3];
+        // let result = 0;
+        // for (let i = 0; i < questionse.length; i++) {
+        //     let answer = prompt(questionse[i] + "Yes/Not")
+            
+        //     if (answer.toLowerCase() === "Yes") {
+        //         result += score[i];
+        //     }
+        // } 
+        // alert("Your result " + result);
+
+        // let invalidSymbols = "0123456789!@#$%^&*()_+=-{}[]/\\?<>,"; /
+        // let fio = prompt("Enter inicials:");
+
+        // let hasError = false;
+
+        // for (let i = 0; i < fio.length; i++) {
+        // if (invalidSymbols.includes(fio[i])) {
+        //     hasError = true;
+        //     break;
+        // }
+        // }
+
+        // if (hasError) {
+        // alert("Errorrr.");
+        // } else {
+        // alert("inicials correct: " + fio);
+        // }
+            </script>
+</body>
+</html>
