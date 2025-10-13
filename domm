@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 01</title>
+    <style>
+        #colorOutput {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="colorOutput">
+    </div>
+
+    <script>
+        /*
+        Задание:
+        Сделайте так, чтобы при нажатии на клавишу G фон div#colorOutput становился зеленым.
+        при нажатии на клавишу R фон div#colorOutput становился красным, 
+        а при нажатии на клавишу B фон div#colorOutput становился синим.
+        */
+    colorOutput = document.getElementById('colorOutput');
+       document.addEventListener('keydown', function(event) {
+  if (event.key === 'g') {
+   colorOutput.style.backgroundColor = ('green');
+  }
+  if (event.key === 'r') {
+   colorOutput.style.backgroundColor = ('red');
+  }
+  if (event.key === 'b') {
+   colorOutput.style.backgroundColor = ('blue');
+  }
+});
+
+    
+    </script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+    <script>
+        /*
+        Задание:
+        Не изменяя расположения элемента script, исправьте ошибку сценария.
+        При загрузке данного сценария на странице должно отобразиться сообщение Hello world
+        */
+        document.addEventListener("DOMContentLoaded", function () {
+            let div = document.querySelector("#output")
+
+        document.querySelector("#output").textContent = "Hello world";
+
+        })
+    </script>
+    
+</head>
+
+<body>
+    <div id="output">
+
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 03</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first_div"></div>
+    <div id="second_div"></div>
+    <div id="third_div"></div>
+
+    <script>
+        /*
+        Задание:
+        Реализуйте сценарий, который при нажатии на клавиши 1, 2 или 3 на клавиатуре будет добавлять рамку
+        красного цвета на соответствующий div. Если зажаты клавиши Ctrl + A, то красная рамка добавляется сразу
+        для всех div
+        */
+       
+        
+        first = document.getElementById('first_div');
+       document.addEventListener('keydown', function(event) {
+  if (event.key === '1') {
+    first.style.div = ('green');
+  }
+
+});
+second = document.getElementById('second_div');
+document.addEventListener('keydown', function(event) {
+  if (event.key === '2') {
+   second.style.div = ('red');
+  }
+
+});
+        third = document.getElementById('third_div');
+        document.addEventListener('keydown', function(event) {
+  if (event.key === '3') {
+   colorOutput.style.backgroundColor = ('green');
+  }
+
+});
+    </script>
+</body>
+
+</html>
