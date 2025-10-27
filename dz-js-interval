@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+</html>
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Albert_Einstein_1947.jpg/330px-Albert_Einstein_1947.jpg" alt="">
+  <p>Жизнь — как вождение велосипеда. Чтобы сохранить равновесие, ты должен двигаться</p>
+</div>
+
+<div class="card">
+  <img src="https://wakeupmedia.info/wp-content/uploads/2018/11/sokrat.jpg" alt="">
+  <p>Несчастье показывает, кто на самом деле друг</p>
+</div>
+
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Lev_Nikolayevich_Tolstoy_in_1910_by_Vladimir_Chertkov.jpg" alt="">
+  <p>Счастлив тот, кто счастлив у себя дома</p>
+</div>
+
+<div class="card">
+  <img src="https://stuki-druki.com/aforizms/Lennon02.jpg" alt="">
+  <p>Жизнь — это то, что с тобой происходит, пока ты строишь планы</p>
+</div>
+
+<div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwa-m4gH0tYNgGbaUfgX1vN5aJ-uXU_iHng&s" alt="">
+  <p>Успех идет от неудачи к неудаче без потери энтузиазма</p>
+</div>
+
+<button id="prev"><</button>
+<button id="next">></button>
+
+<style>
+  .card {
+    display: none;
+    text-align: center;
+  }
+  .card.active {
+    display: block;
+  }
+  img {
+    width: 300px;
+    height: auto;
+  }
+</style>
+
+<script>
+   cards = document.querySelectorAll('.card');
+   prevBtn = document.getElementById('prev');
+   nextBtn = document.getElementById('next');
+  let currentIndex = 0;
+
+  function showCard(index) {
+    cards.forEach(card => card.classList.remove('active'));
+    cards[index].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  });
+
+  showCard(currentIndex); 
+</script>
+</body>
