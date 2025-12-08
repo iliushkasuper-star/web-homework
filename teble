@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+
+<h2>Регистрация</h2>
+
+<form id="regForm">
+
+    Логин:<br>
+    <input type="text" id="login"><br><br>
+
+    Пароль:<br>
+    <input type="password" id="pass"><br><br>
+
+    Подтверждение:<br>
+    <input type="password" id="confirm"><br><br>
+
+    Полное имя:<br>
+    <input type="text" id="fullname"><br><br>
+
+    Пол:<br>
+    <input type="radio" name="sex" value="M"> М
+    <input type="radio" name="sex" value="F"> Ж
+    <br><br>
+
+    Специализация:<br>
+    <input type="checkbox" name="spec" value="Дизайн"> Дизайн<br>
+    <input type="checkbox" name="spec" value="Программирование"> Программирование<br>
+    <input type="checkbox" name="spec" value="Администрирование"> Администрирование<br><br>
+
+    Должность:<br>
+    <select id="role">
+        <option>------Выберите------</option>
+        <option>Директор</option>
+        <option>Заместитель директора</option>
+        <option>Руководитель проекта</option>
+        <option>Начальник отдела</option>
+        <option>Программист</option>
+        <option>Дизайнер</option>
+        <option>Консультант</option>
+        <option>Служащий</option>
+    </select>
+    <br><br>
+
+    <input type="button" value="Регистрация" onclick="registerUser()">
+    <input type="reset" value="Сброс">
+
+</form>
+
+<script>
+function registerUser() {
+
+    let login = document.getElementById("login").value;
+    let pass = document.getElementById("pass").value;
+    let confirm = document.getElementById("confirm").value;
+    let fullname = document.getElementById("fullname").value;
+
+    let sex = document.querySelector('input[name="sex"]:checked');
+    let sexValue = sex ? sex.value : "не выбрано";
+
+    let specs = document.querySelectorAll('input[name="spec"]:checked');
+    let specList = [];
+    specs.forEach(function (item) {
+        specList.push(item.value);
+    });
+
+    let role = document.getElementById("role").value;
+
+        alert(
+        "Login: " + login + "\n" +
+        "Password: " + pass + "\n" +
+        "Confirm: " + confirm + "\n" +
+        "Full name: " + fullname + "\n" +
+        "Sex: " + sexValue + "\n" +
+        "Specializations: " + specList.join(", ") + "\n" +
+        "Role: " + role
+    );
+}
+</script>
+
+</body>
+</html>
